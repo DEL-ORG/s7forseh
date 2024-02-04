@@ -1,1 +1,7 @@
 
+Deleting a remote branch or tag
+The syntax to delete a branch is a bit arcane at first glance:
+
+git push REMOTE-NAME :BRANCH-NAME
+Note that there is a space before the colon. The command resembles the same steps you'd take to rename a branch. However, here, 
+you're telling Git to push nothing into BRANCH-NAME on REMOTE-NAME. Because of this, git push deletes the branch on the remote repository.
